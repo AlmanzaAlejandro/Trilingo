@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Idioma</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="language-container">
+        <h1 id="language-header">¿Qué quieres aprender?</h1>
+        <div class="languages">
+            <button class="language-btn" onclick="selectLanguage('Inglés')">
+                <img src="ingles.png" alt="Bandera de Inglés" class="flag-icon">
+                Inglés
+            </button>
+            <button class="language-btn" onclick="selectLanguage('Francés')">
+                <img src="frances.png" alt="Bandera de Francés" class="flag-icon">
+                Francés
+            </button>
+            <button class="language-btn" onclick="selectLanguage('Español')">
+                <img src="espanol.png" alt="Bandera de Español" class="flag-icon">
+                Español
+            </button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const texts = ["¿Qué quieres aprender?", "What do you want to learn?", "Qu'est-ce que tu veux apprendre?"];
+            let index = 0;
+            const header = document.getElementById("language-header");
+
+            setInterval(() => {
+                index = (index + 1) % texts.length;
+                header.textContent = texts[index];
+            }, 5000);
+        });
+
+        function selectLanguage(language) {
+            localStorage.setItem('selectedLanguage', language);
+            window.location.href = 'lessons.html';
+        }
+    </script>
+</body>
+</html>
+

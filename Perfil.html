@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="dinosaurio.png" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">Aprender</a></li>
+                <li><a href="examenes.html">Exámenes</a></li>
+                <li><a href="Profesores.html">Maestros</a></li>
+                <li><a href="perfil.html">Perfil</a></li>
+                <li><a href="Mas.html">Más</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="flag-container">
+                <img id="flag-icon" src="espanol.png" alt="Bandera" class="flag">
+            </div>
+        </header>
+        <div class="profile-content">
+            <h1></h1>
+            <div class="profile-card">
+                <img src="user.png" alt="Foto de Perfil" class="profile-photo">
+                <div class="profile-info">
+                    <label for="username">Nombre de Usuario:</label>
+                    <input type="text" id="username" value="Juan Pérez">
+                </div>
+                <div class="profile-info">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" value="juan.perez@example.com">
+                </div>
+                <div class="profile-info">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" value="password123">
+                </div>
+                <button onclick="saveProfile()" class="save-button">Guardar Cambios</button>
+            </div>
+        </div>
+    </div>
+    <script src="perfil.js"></script>
+</body>
+</html>

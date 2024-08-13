@@ -1,0 +1,621 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form .logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    color: #aaa;
+    pointer-events: none;
+    transition: all 0.2s;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: #333;
+    background-color: #fff;
+    padding: 0 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.separator {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.social-login .btn {
+    width: 48%;
+}
+
+.social.facebook {
+    background-color: #3b5998;
+}
+
+.social.google {
+    background-color: #db4437;
+}
+
+.social.facebook:hover {
+    background-color: #2d4373;
+}
+
+.social.google:hover {
+    background-color: #c23321;
+}
+
+.terms {
+    font-size: 12px;
+    color: #aaa;
+}
+
+.terms a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.language-container {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#language-header {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.languages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.language-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.language-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.flag-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: white;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.sidebar-header {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #3e3e3e;
+    border-radius: 5px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.flag-container {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 40px;
+    height: auto;
+}
+
+.lessons-section {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.lessons-section h1 {
+    margin-top: 0;
+}
+
+.lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px; /* Ajusta el valor según el espacio que desees entre los cuadros */
+    justify-items: center;
+}
+
+.lesson-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #444;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+}
+
+.lesson-card:hover {
+    background-color: #555;
+}
+
+.lesson-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.lesson-title {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: white;
+    display: flex;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2e2e2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.sidebar-header {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: #3e3e3e;
+    border-radius: 5px;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.flag-container {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 40px;
+    height: auto;
+}
+
+.lesson-content {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.lessons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.lesson-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #444;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.lesson-card:hover {
+    background-color: #555;
+}
+
+.lesson-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.lesson-title {
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+#quiz-container {
+    text-align: center;
+}
+
+#question {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.option-button {
+    display: block;
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.option-button:hover {
+    background-color: #555;
+}
+
+#next-button {
+    display: none;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.teachers-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas pasen a la siguiente línea si la ventana es estrecha */
+    justify-content: space-around; /* Distribuye las tarjetas con espacio entre ellas */
+    gap: 20px; /* Espacio entre las tarjetas */
+    margin-top: 20px;
+}
+
+.teacher-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    margin: 10px;
+    box-sizing: border-box; /* Asegura que el padding se incluya dentro del ancho total */
+}
+
+
+
+.teacher-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.teacher-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.question-box {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.send-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.send-button:hover {
+    background-color: #0056b3;
+}
+
+
+.profile-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px); /* Ajusta la altura teniendo en cuenta la barra de navegación */
+}
+
+.profile-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    margin-bottom: 15px;
+}
+
+.profile-info label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.profile-info input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.save-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.save-button:hover {
+    background-color: #0056b3;
+}
+
+
+.more-content {
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.info-card h2 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.info-card p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.contact-button:hover {
+    background-color: #0056b3;
+}

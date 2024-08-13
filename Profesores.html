@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maestros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="dinosaurio.png" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="lessons.html">Aprender</a></li>
+                <li><a href="examenes.html">Exámenes</a></li>
+                <li><a href="Profesores.html">Maestros</a></li>
+                <li><a href="Perfil.html">Perfil</a></li>
+                <li><a href="Mas.html">Más</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="flag-container">
+                <img id="flag-icon" src="espanol.png" alt="Bandera" class="flag">
+            </div>
+        </header>
+        <div class="teachers-content">
+            <h1>Maestros</h1>
+            <div class="teachers-grid">
+                <div class="teacher-card">
+                    <img src="maestro1.png" alt="Maestro 1 " class="teacher-photo">
+                    <div class="teacher-name">Israel Martinez</div>
+                    <textarea placeholder="Escribe tu pregunta aquí..." class="question-box"></textarea>
+                    <button onclick="sendQuestion('Maestro 1')" class="send-button">Enviar Pregunta</button>
+                </div>
+                <div class="teacher-card">
+                    <img src="maestro2.png" alt="Maestro 2" class="teacher-photo">
+                    <div class="teacher-name">Lucas Ramirez</div>
+                    <textarea placeholder="Escribe tu pregunta aquí..." class="question-box"></textarea>
+                    <button onclick="sendQuestion('Maestro 2')" class="send-button">Enviar Pregunta</button>
+                </div>
+                <!-- Añadir más maestros si es necesario -->
+            </div>
+        </div>
+    </div>
+    <script src="maestros.js"></script>
+</body>
+</html>

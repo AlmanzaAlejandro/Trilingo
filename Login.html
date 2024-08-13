@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Inicio de Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <img src="dinosaurio.png" alt="Logo Dinosaurio" class="logo">
+            <h2>Log In</h2>
+            <form id="login-form" action="/login" method="post">
+                <div class="input-group">
+                    <input type="text" id="email" name="email" required>
+                    <label for="email">Email or username</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" name="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <button type="submit" class="btn">Log In</button>
+                <div class="separator">or</div>
+                <div class="social-login">
+                    <button class="btn social facebook">Facebook</button>
+                    <button class="btn social google">Google</button>
+                </div>
+                <p class="terms">
+                    By signing up to Duolingo, you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("login-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            window.location.href = "index.html";
+        });
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="dinosaurio.png" alt="Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="lessons.html">Aprender</a></li>
+                <li><a href="examenes.html">Exámenes</a></li>
+                <li><a href="Profesores.html">Maestros</a></li>
+                <li><a href="Perfil.html">Perfil</a></li>
+                <li><a href="Mas.html">Más</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+        <header>
+            <div class="flag-container">
+                <img id="flag-icon" src="espanol.png" alt="Bandera" class="flag">
+            </div>
+        </header>
+        <div class="lesson-content">
+            <h1>Lecciones</h1>
+            <div class="lessons-grid">
+                <div class="lesson-card" onclick="startQuiz()">
+                    <img src="Medalla.png" alt="Lección 1" class="lesson-icon">
+                    <div class="lesson-title">Lección 1</div>
+                </div>
+                <!-- Añadir más lecciones si es necesario -->
+            </div>
+            <!-- Contenedor del cuestionario, inicialmente oculto -->
+            <div id="quiz-container" style="display:none;">
+                <div id="question"></div>
+                <div id="options"></div>
+                <button id="next-button" onclick="nextQuestion()" style="display:none;">Siguiente</button>
+            </div>
+        </div>
+    </div>
+    <script src="Lecciones.js"></script>
+</body>
+</html>
+
